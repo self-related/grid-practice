@@ -28,16 +28,15 @@
   }
 
   main {
-    display: grid;
-    grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
-    row-gap: 3rem;
+    display: grid;      /* make {main} element a grid */
+    grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr); /* make 3 columns for {main} grid. minmax(minimum value, maximum value); values may be: px, %, fr, rem, etc... */
+    row-gap: 3rem;      /* 3rem space between rows */
 /*  
     grid with 3 columns:
      _ __ _
     |_|__|_|
     |_|__|_|
     |_|__|_| 
-
 */
 }
 
@@ -52,8 +51,9 @@
     |_|__|_|
     |_|__|_|
     1 2  3 4
+      ^  ^
     
-    .heading starts from 2 to 3 vertical line i.e. in 2nd column
+    {.heading} starts from 2 to 3 vertical line i.e. in 2nd column
 
 */
 
