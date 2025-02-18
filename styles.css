@@ -56,6 +56,11 @@
     .heading starts from 2 to 3 vertical line i.e. in 2nd column
 
 */
+
+    /* define nested grid */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* == grid-template-columns: 1 fr 1 fr; */
+    row-gap: 1.5rem;
 }
 
 .text {
