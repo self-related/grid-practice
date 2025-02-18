@@ -31,4 +31,29 @@
     display: grid;
     grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
     row-gap: 3rem;
+/*  
+    grid with 3 columns:
+     _ __ _
+    |_|__|_|
+    |_|__|_|
+    |_|__|_| 
+
+*/
+}
+
+.heading {
+    grid-column: 2 / 3;
+/*    ^^^^^^ is same as:
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+     _ __ _
+    |_|__|_|
+    |_|__|_|
+    |_|__|_|
+    1 2  3 4
+    
+    .heading starts from 2 to 3 vertical line i.e. in 2nd column
+
+*/
 }
